@@ -1,0 +1,28 @@
+
+mysql:
+    host: localhost
+    port: 3306
+    db: form-pj
+    user: root
+    config: charset=utf8mb4&parseTime=true&loc=Local
+    password: 123
+    log_level: dev          #运行环境
+#    max_idle_cons: 10
+#    max_open_cons: 10
+#    con_max_lifetime: 10    #10* time.second
+
+
+server:
+    host: localhost         #运行地址
+    port: 4000             #端口
+    env: release              #开发环境
+    jwt_key : 89js82js72
+
+
+logger:                     #日志
+    level: info
+    prefix: '[gvb]'         #前缀
+    director: log           #存放目录
+    show_line: true         #显示行号
+    log_in_console: true    #显示路径
+
